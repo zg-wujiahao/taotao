@@ -1,38 +1,63 @@
 <!--miniprogram/pages/fabu/fabu.wxml-->
 <form bindsubmit="formSubmit">
-  <view class='top-card'>
-    <view class='title'>
-      <input name="name" placeholder="为您的商品起个名"></input>
-    </view>
-    
-    <view class='link'></view>
+	<view class='top-card'>
+		<view class='title'>
+			<input name="name" placeholder="为您的商品起个名"></input>
+		</view>
 
-    <view class='buttom-card'>
-      <view class='span'>
-        <input name="price" placeholder='请输入您认为合适的价格' type='digit'></input>
-      </view>
+		<view class='link'></view>
 
-      <view class='link'></view>
+		<view class='buttom-card'>
 
-      <view class='span'>
-        <picker bindchange="bindPickerChange" range="{{array}}" value='{{index}}'>
-          类型:
-          <text>当前选择：{{array[index]}}</text>
-        </picker>
-      </view>
-    </view>
+			<view class='span'>
+				<picker bindchange="bindPickerChange" range="{{array}}" value='{{index}}'>
+					类型:
+					<text>当前选择：{{array[index]}}</text>
+				</picker>
+			</view>
 
-    <view class='link'></view>
+			<view class='link'></view>
 
-    <view class='describle'>
-      <!-- <input name="describle" placeholder='商品描述'></input> -->
-      <textarea name="describle" placeholder="商品描述,最多可添加3张照片" />
-    </view>
+			<view class='span'>
+				<input name="price" placeholder='请输入您认为合适的价格' type='digit'></input>
+			</view>
+
+		</view>
+
+		<view class='link'></view>
+
+		<view class='title'>
+			<input name="address" placeholder="请输入您的地址"></input>
+		</view>
+
+		<view class='link'></view>
+
+		<view class='title'>
+			<input name="contact" placeholder="请输入您的联系方式" type='digit'></input>
+		</view>
+
+		<view class='link'></view>
+
+		<view class='title'> 
+			<checkbox-group bindchange="checkboxChange">
+      取货方式 ：
+				<checkbox value='自提' checked='true'>自提</checkbox>
+				<checkbox value='送货上门'>送货上门</checkbox>
+			</checkbox-group>
+		</view>
+
+		<view class='link'></view>
+
+		<view class='describle'>
+			<!-- <input name="describle" placeholder='商品描述'></input> -->
+			<textarea name="describle" placeholder="商品描述，最多可添加3张照片" />
+			</view>
 
     <view class='img-span'>
       <image wx:for="{{img}}" src='{{item}}' bindtap='updateimg' class='img'></image>
       <image src='../../images/icon_photo.png' bindtap='updataimg' class='img'></image>
     </view>
+
   </view>
 
   <view class='buttom'>

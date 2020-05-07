@@ -12,21 +12,21 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
+  onLoad: function (options) {
 
   },
-  bindPickerChange: function(e) {
+  bindPickerChange: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       index: e.detail.value
     })
   },
-  updataimg: function() {
+  updataimg: function () {
     var that = this
     wx.chooseImage({
-      count:3,
+      count: 3,
       sourceType: ['album', 'camera'],
-      success: function(res) {
+      success: function (res) {
         //
         var tempFilePaths = res.tempFilePaths
         that.setData({
@@ -37,4 +37,12 @@ Page({
       }
     })
   },
+  checkboxChange: function (e) {
+    console.log(e.detail.value)
+  },
+  formSubmit:function(e){
+    wx.showToast({
+      title: '提交功能待完成',
+    })
+  }
 })
