@@ -1,0 +1,59 @@
+/* miniprogram/pages/fabubyme/fabubyme.wxss */
+.link {
+  height: 5rpx;
+  background-color: #7B7B7B;
+  width: 95%;
+  position: relative;
+  left: 20rpx;
+}
+
+.box {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  margin-top: 5px;
+}
+
+view {
+  display: block;
+}
+
+image {
+  width: 100px;
+  height: 100px;
+  margin-left: 20rpx;
+}
+
+.neirong {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 25rpx;
+}
+
+.text1 {
+  font-size: 15pt;
+}
+
+.text2 {
+  height: 30px;
+  width: 200px;
+  font-size: 8pt;
+}
+
+.text3 {
+  color: red
+}
+
+.text4 {
+  margin-bottom: 0px;
+}
+
+.img {
+  height: 20px;
+}
+
+.img>image {
+  width: 20px;
+  height: 20px;
+}

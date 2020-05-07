@@ -1,0 +1,25 @@
+<!--miniprogram/pages/xihuanbyme/xihuanbyme.wxml-->
+<view class="wupin">
+	<view class="box" bindlongpress="delete">
+		<image src="/images/goumai/xie.jpg" />
+		<view class="neirong">
+			<text class="text1">用篮球鞋换自行车</text>
+			<text class="text2">个人因为鞋子太多，所以想用一双鞋子换一辆二手自行车</text>
+			<view class="img">
+				<image src="/images/xiaoxi.png" /><text class="text3">点击联系</text>
+			</view>
+		</view>
+	</view>
+	<view class='link'></view>
+	<view class="box" bindlongpress="delete">
+		<image src="/images/goumai/xie2.jpg" />
+		<view class="neirong">
+			<text class="text1">免费捐赠一双人字拖</text>
+			<text class="text2">免费捐赠一双人字拖，支持自取！</text>
+			<view class="img">
+				<image src="/images/xiaoxi.png" /><text class="text3">点击联系</text>
+			</view>
+		</view>
+	</view>
+	<view class='link'></view>
+</view>

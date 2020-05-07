@@ -1,0 +1,14 @@
+<!--miniprogram/pages/fabubyme/fabubyme.wxml-->
+<view class="wupin">
+   <view class="box" bindlongpress="delete">
+      <image src="/images/goumai/che.png"/>
+      <view class="neirong">
+        <text class="text1">出手二手山地车</text>
+        <text class="text2">因为临近毕业，打算把自行车出售给有需要的学弟学妹</text>
+        <view class="img">
+        <image src="/images/money.png"/><text class="text3">200.00元</text>
+        </view>
+      </view>
+   </view>
+   <view class='link'></view>
+   </view>

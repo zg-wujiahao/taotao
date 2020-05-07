@@ -1,1 +1,75 @@
 /* miniprogram/pages/my/my.wxss */
+.title-card {
+  background-color: rgb(52, 178, 237);
+  width: 100%;
+}
+
+.box {
+  position: relative;
+  top: 5rpx;
+  width: 100%;
+  background-color: white;
+  border-radius: 10rpx;
+  display: flex;
+  margin: 2rpx;
+  flex-direction: column;
+}
+
+.box .box-span {
+  height: 80rpx;
+  margin: 20rpx;
+}
+
+.box view .left {
+  position: relative;
+  top: 20rpx;
+  left: 30rpx;
+  font-size: 35rpx;
+}
+
+.box view .right {
+  position: relative;
+  float: right;
+  top: 20rpx;
+  right: 20rpx;
+}
+
+.box view image {
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+}
+
+.logout {
+  text-align: center;
+  padding: 100rpx 100rpx;
+}
+
+.login {
+  margin: 0rpx;
+}
+
+.btn1 {
+  margin-top: 30rpx;
+}
+
+.login .name image {
+  height: 140rpx;
+  width: 140rpx;
+  margin-top: 20rpx;
+  border-radius: 50%;
+}
+
+.login .name {
+  background: rgb(52, 178, 237);
+  display: flex;
+  width: 100%;
+  height: 400rpx;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login .name text {
+  padding: 20rpx;
+}
