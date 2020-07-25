@@ -47,6 +47,12 @@ image {
 
 .text4 {
   margin-bottom: 0px;
+  height: 5rpx;
+  background-color: rgb(10, 9, 9);
+  width: 95%;
+  position: relative;
+  left: 20rpx;
+  margin-top: 42rpx;
 }
 
 .img {

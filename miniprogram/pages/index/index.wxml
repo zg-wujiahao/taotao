@@ -1,20 +1,45 @@
 <!--index.wxml-->
 <import src='../template/template.wxml' />
 <view class="page">
-  <view>
-    <view>
-      <view class="weui-search-bar">
-        <view class="weui-search-bar__form">
-          <!-- 搜索框 -->
-          <view class="weui-search-bar__box">
-            <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
-            <input type="text" class="weui-search-bar__input" placeholder="请输入搜索内容" />
-          </view>
-        </view>
-        <!-- 搜索按钮,调用搜索查询方法 -->
-        <view class="weui-search-bar__cancel-btn" bindtap=''>搜索</view>
-      </view>
-    </view>
-  </view>
-  <template is='header' />
+	<view>
+		<view>
+			<view class="weui-search-bar">
+				<view class="weui-search-bar__form">
+					<!-- 搜索框 -->
+					<view class="weui-search-bar__box">
+						<icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+						<input type="text" class="weui-search-bar__input" placeholder="请输入搜索内容" bindinput="search1" />
+					</view>
+				</view>
+				<!-- 搜索按钮,调用搜索查询方法 -->
+				<view class="weui-search-bar__cancel-btn" bindtap='search'>搜索</view>
+			</view>
+		</view>
+	</view>
+	<template is='header' />
+	<!--导航条-->
+	<view class="tab">
+		<view class="tab-item {{tab==0?'active':''}}" bindtap="changeItem" data-item="0" >全部</view>
+		<view class="tab-item {{tab==1?'active':''}}" bindtap="changeItem" data-item="1">购买</view>
+		<view class="tab-item {{tab==2?'active':''}}" bindtap="changeItem" data-item="2">捐赠</view>
+		<view class="tab-item {{tab==3?'active':''}}" bindtap="changeItem" data-item="3">交换</view>
+	</view>
+
+	<!-- 内容区域 -->
+	<view class="content">
+		<swiper current="{{item}}" bindchange="changeTab">
+			<swiper-item>
+				<include src="../quanbu/quanbu.wxml" />
+			</swiper-item>
+			<swiper-item>
+				<include src="../goumai/goumai.wxml" />
+			</swiper-item>
+			<swiper-item>
+				<include src="../juanzeng/juanzeng.wxml" />
+			</swiper-item>
+			<swiper-item>
+				<include src="../jiaohuan/jiaohuan.wxml" />
+			</swiper-item>
+		</swiper>
+	</view>
 </view>

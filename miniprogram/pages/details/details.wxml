@@ -1,0 +1,24 @@
+<!--miniprogram/details/details.wxml-->
+<view class="header">
+	<view class="name">
+		<image src="../../images/touxiang.png"></image>
+		<text>{{res.openid}}</text>
+	</view>
+	<view class="money">
+		￥<text>{{res.price}}</text> {{res.pickupway}}
+	</view>
+	<text>{{res.name}}</text>
+</view>
+<view class="footer">
+	<view class="shangpin">商品详情</view>
+	<text>{{res.describle}}</text>
+	<image src="{{res.img}}"></image>
+</view>
+
+<view class="bottom">
+	<view class="view1">
+		<image class="save " src="{{isClick?'../../images/love.png':'../../images/love1.png'}}" bindtap="tags"></image>
+		<button class="btn1">买前聊一聊</button>
+		<button class="btn2">马上买</button>
+	</view>
+</view>

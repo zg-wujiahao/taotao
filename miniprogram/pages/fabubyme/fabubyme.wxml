@@ -1,14 +1,14 @@
 <!--miniprogram/pages/fabubyme/fabubyme.wxml-->
 <view class="wupin">
-   <view class="box" bindlongpress="delete">
-      <image src="/images/goumai/che.png"/>
-      <view class="neirong">
-        <text class="text1">出手二手山地车</text>
-        <text class="text2">因为临近毕业，打算把自行车出售给有需要的学弟学妹</text>
-        <view class="img">
-        <image src="/images/money.png"/><text class="text3">200.00元</text>
-        </view>
-      </view>
-   </view>
-   <view class='link'></view>
-   </view>
+	<view class="box" bindlongpress="delete" bindtap="details" wx:for="{{my.data}}" id="{{item._id}}">
+		<image src="{{item.img}}" />
+		<view class="neirong">
+			<text class="text1">{{item.name}}</text>
+			<text class="text2">{{item.describle}}</text>
+			<view class="img">
+				<image src="/images/money.png" /><text class="text3">{{item.price}}.00元</text>
+			</view>
+			<text class="text4"></text>
+		</view>
+	</view>
+</view>

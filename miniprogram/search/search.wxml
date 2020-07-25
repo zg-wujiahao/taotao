@@ -1,0 +1,15 @@
+<!--miniprogram/search/search.wxml-->
+<view class="wupin">
+	<view class="box" bindtap="details" wx:for="{{res}}" id="{{item._id}}">
+		<image src="{{item.img}}" />
+		<view class="neirong">
+			<text class="text1">{{item.name}}</text>
+			<text class="text2">{{item.describle}}</text>
+			<view class="img">
+				<image src="/images/money.png" /><text class="text3">{{item.price}}.00元</text>
+				<image src="/images/xiaoxi.png" /><text class="text3">点击联系</text>
+			</view>
+			<view class='link'></view>
+		</view>
+	</view>
+</view>

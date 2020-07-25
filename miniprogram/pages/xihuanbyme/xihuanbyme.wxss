@@ -5,6 +5,7 @@
   width: 95%;
   position: relative;
   left: 20rpx;
+  margin-top: 42rpx;
 }
 
 .box {

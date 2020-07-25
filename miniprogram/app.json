@@ -4,7 +4,13 @@
     "pages/fabu/fabu",
     "pages/my/my",
     "pages/fabubyme/fabubyme",
-    "pages/xihuanbyme/xihuanbyme"
+    "pages/xihuanbyme/xihuanbyme",
+    "pages/details/details",
+    "pages/goumai/goumai",
+    "pages/jiaohuan/jiaohuan",
+    "pages/juanzeng/juanzeng",
+    "pages/quanbu/quanbu",
+    "search/search"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
